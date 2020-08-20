@@ -1,0 +1,120 @@
+html{
+  font-size: 62.5%;
+  height: auto;
+}
+#root {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    /* animation: App-logo-spin infinite 20s linear; */
+    width: 10%;
+    height: 10%;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: dotted 2px yellow;
+  }
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* My CSS */
+/* structure */
+body{
+  width: 100%;
+  overflow-x: none;
+  background-image: url(images/desk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+/* navigation */
+.navigation{
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  border-bottom: 2px dotted black;
+}
+.item{
+  text-decoration: none;
+  color: blue;
+  font-weight: 600;
+  margin: 0 1.5rem;
+}
+/* ==================projects=================== */
+/* Conteneur principal */
+.overlay-image {
+  position: relative;
+  width: 20%;
+ }
+ /* Image originale */
+ .overlay-image .image {
+  display: block;
+  width: 100%;
+  height: auto;
+ }
+ /* Overlay */
+.overlay-image .hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: .5s ease;
+ }
+ /* Apparition overlay sur passage souris */
+ .overlay-image:hover .hover {
+  opacity: 1;
+ }
+ .home-page .itemHome, .about-page .itemAbout, .projects-page .itemProjects, .skills-page .itemSkills, .contact-page .itemContact{
+   display: none;
+ }
+ /* ============================================ */
+ /* ====================skills=================== */
+ .techno .skills{
+   box-sizing: border-box;
+   height: 800px;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   list-style-type: none;
+ }
+ .techno .skills .skill{
+  width: 33%;
+  height: 12rem;
+  
+ }
+ .techno .skills .skill img{
+   display: inline-block;
+   /* width: 100%;
+   height: 100%; */
+ }
+ /* =============================================== */
+ /* ====================contact==================== */
+#formContact{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+#formContact label, #formContact input, #formContact textarea, #formContact button{
+  width: 50%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
